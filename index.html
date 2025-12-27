@@ -153,25 +153,52 @@
   </div>
 
   <!-- About Section -->
-  <section id="about" class="hidden px-6 md:px-16 py-12 scroll-smooth
-  bg-gradient-to-br from-slate-50 via-white to-indigo-50">
-    <h3 style="color:#334155;" class="text-2xl md:text-3xl font-bold mb-6 font-poppins text-red-700">About Me</h3>
-    <p class="text-gray-700 text-base md:text-lg max-w-3xl leading-relaxed">
-      I am a passionate and dedicated science teacher with a strong commitment to nurturing curiosity,
-      critical thinking, and a love for scientific discovery among students. I believe that science is best
-      learned through observation, experimentation, and real-world application rather than memorization alone.
-      <br><br>
-      With a student-centered teaching approach, I focus on creating an interactive classroom environment
-      where learners feel encouraged to ask questions, explore ideas, and develop problem-solving skills.
-      I integrate hands-on experiments, practical demonstrations, and modern teaching tools to make complex
-      scientific concepts easy to understand and enjoyable.
-      <br><br>
-      My goal is not only to help students excel academically but also to inspire them to think logically,
-      remain curious about the natural world, and apply scientific knowledge in everyday life. I continuously
-      strive to improve my teaching methods and stay updated with new educational strategies to provide the
-      best learning experience possible.
-    </p>
+  <section id="about"
+    class="hidden px-6 md:px-16 py-12 scroll-smooth bg-gradient-to-br from-slate-50 via-white to-indigo-50">
+
+    <h3 class="text-3xl md:text-4xl font-bold mb-12 font-poppins text-gray-800 text-center md:text-left">
+      About Me
+    </h3>
+
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-12 md:gap-16">
+
+      <!-- Image Section -->
+      <div
+        class="flex-1 max-w-xs rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+        <img src="/images/pic.png" alt="Me" class="w-full h-96 object-cover" style="background-color: #334155;">
+      </div>
+
+      <!-- Text Section -->
+      <div class="flex-1 font-outfit italic">
+        <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+          I am a passionate physics student. My deep interest in physics goes beyond textbooks and examinations—I
+          genuinely enjoy understanding, solving, and explaining physics at its core.
+        </p>
+
+        <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+          What excites me most about physics is the way simple principles lead to powerful results through logical
+          reasoning and mathematical derivations. I love working through physics problems step by step, uncovering the
+          ideas behind formulas rather than memorizing them. For me, derivations are not just calculations; they are
+          stories that explain how nature works.
+        </p>
+
+        <p class="text-gray-700 text-base md:text-lg leading-relaxed  mb-6">
+          Alongside learning, I am deeply interested in teaching physics concepts in a clear, intuitive, and
+          student-friendly way. I believe that physics becomes truly beautiful when complex ideas are broken down into
+          simple reasoning, visual thinking, and real-world connections. Whether it is classical mechanics,
+          electromagnetism, or mathematical methods in physics, I enjoy guiding others through concepts with clarity and
+          patience.
+        </p>
+        <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+          My long-term goal is to grow as a physicist and an educator, contributing to physics learning by making it
+          accessible, rigorous, and conceptually clear. If you are curious about physics or want to strengthen your
+          understanding, you are in the right place
+        </p>
+      </div>
+
+    </div>
   </section>
+
 
   <section class="hidden px-2 md:px-16 py-2 bg-slate-50 scroll-smooth" id="experience">
     <h3 class="text-2xl md:text-3xl font-bold mb-6 font-poppins text-red-700" style="color:#334155;">
@@ -252,12 +279,12 @@
       </div>
 
       <div class="flex-1">
-        <form class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-xl shadow-lg">
+        <form class="bg-slate-300 backdrop-blur-md border border-gray-200 rounded-xl shadow-lg">
           <div class="flex flex-col gap-6 p-6">
 
             <!-- Name -->
             <div>
-              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
+              <label for="name" class="block text-sm font-medium text-black mb-1">
                 Name
               </label>
               <input type="text" id="name" placeholder="Enter your name" required
@@ -266,7 +293,7 @@
 
             <!-- Email -->
             <div>
-              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+              <label for="email" class="block text-sm font-medium text-black mb-1">
                 Email
               </label>
               <input type="email" id="email" placeholder="Enter your email" required
@@ -275,7 +302,7 @@
 
             <!-- Message -->
             <div>
-              <label for="msg" class="block text-sm font-medium text-gray-700 mb-1">
+              <label for="msg" class="block text-sm font-medium text-black mb-1">
                 Message
               </label>
               <textarea id="msg" rows="4" placeholder="Write your message..."
