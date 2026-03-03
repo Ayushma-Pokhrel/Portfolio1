@@ -10,8 +10,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/favicon_io/favicon-16x16.png">
   <link rel="icon" type="image/png" href="images/favicon_io/favicon-32x32.png">
@@ -20,66 +18,57 @@
   <link rel="apple-touch-icon" href="images/favicon_io/site.webmanifest">
   <link rel="stylesheet" href="output.css">
 
-
+  <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("YOUR_PUBLIC_KEY");
+  })();
+</script> -->
 </head>
 
-<body class="overflow-hidden">
+<body class="overflow-hidden scroll-smooth">
   <div class="bg-slate-500">
-    <nav class="bg-white/10  shadow-lg sticky top-0 z-50">
+    <nav class="relative bg-white/10 shadow-lg sticky top-0 z-50 ">
       <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-14">
-
-        <!-- Logo -->
         <div class="flex items-center">
           <img class="h-14 w-auto" src="images/logo.png" alt="logo">
           <h2 class="text-white font-semibold text-xl">Rabin Timsina</h2>
         </div>
-
-        <!-- Menu -->
         <ul class="hidden md:flex space-x-8">
-          <li>
-            <a href="#" class="rounded-md bg-gray-950/50 px-3 py-2 text-lg font-medium text-white">
-              Home
-            </a>
+          <li><a href="#" class="rounded-md bg-gray-950/50 px-3 py-2 text-lg font-medium text-white">Home</a></li>
+          <li><a href="#"
+              class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
           </li>
-          <li>
-            <a href="#"
-              class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-white/5 hover:text-white">
-              About
-            </a>
+          <li><a href="#"
+              class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-white/5 hover:text-white">Skills</a>
           </li>
-          <li>
-            <a href="#"
-              class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-white/5 hover:text-white">
-              Skills
-            </a>
-          </li>
-          <li>
-            <a href="#"
-              class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-white/5 hover:text-white">
-              Contact
-            </a>
+          <li><a href="#"
+              class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
           </li>
         </ul>
-        <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">
-          <span id="menu-icon" class="text-white">☰</span>
+        <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+          <span id="menu-icon">☰</span>
         </button>
       </div>
-      <div id="mobile-menu"
-        class="hidden md:hidden bg-slate-700/95 px-6 py-4 w-30 absolute right-4 top-14 text-center z-40">
 
-        <a href="#" class="block py-2 text-white">Home</a>
-        <a href="#about" class="block py-2 text-white">About</a>
-        <a href="#" class="block py-2 text-white">Skills</a>
-        <a href="#contact" class="block py-2 text-white">Contact</a>
+      <div id="mobile-menu" class="hidden md:hidden absolute right-0 top-14 w-44 z-50
+     bg-slate-800/95 backdrop-blur-sm shadow-xl rounded-bl-xl
+     py-2 px-4 flex flex-col items-end gap-1">
+        <a href="#"
+          class="w-full text-right py-2 px-3 text-white font-medium rounded-lg hover:bg-white/10 transition-colors duration-200">Home</a>
+        <a href="#about"
+          class="w-full text-right py-2 px-3 text-white font-medium rounded-lg hover:bg-white/10 transition-colors duration-200">About</a>
+        <a href="#"
+          class="w-full text-right py-2 px-3 text-white font-medium rounded-lg hover:bg-white/10 transition-colors duration-200">Skills</a>
+        <a href="#contact"
+          class="w-full text-right py-2 px-3 text-white font-medium rounded-lg hover:bg-white/10 transition-colors duration-200">Contact</a>
       </div>
     </nav>
-
     <!-- Home / Hero Section -->
     <div
-      class="relative min-h-screen pt-10 md:pt-0 flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-4 md:px-16 py-12 gap-8">
+      class="relative min-h-screen pt-10 md:pt-0 flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-4 md:px-16 gap-8">
 
-
-      <!-- Left Section: Text + Button -->
+      <!-- Left Section -->
       <div class="text-white max-w-lg flex flex-col items-center md:items-start">
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold drop-shadow-lg text-center md:text-left">
           Hi, 👋 <br>I'm <span class="text-orange-200">Rabin Timsina</span>
@@ -92,169 +81,178 @@
         </p>
 
 
-
-        <div class="flex gap-6 mt-8">
-          <a target="_blank" href="https://youtube.com/@rabintimsina?si=RgNvEPK1vdaYbQo2" class="flex items-center justify-center w-12 h-12 rounded-full border bg-white
-           text-red-600 shadow-md transition-all duration-300
-           hover:bg-red-600 hover:text-white hover:scale-110">
-            <i class="fa-brands fa-youtube text-2xl"></i>
+        <div class="flex gap-4 md:gap-8 lg:gap-8 mt-6 md:mt-2 lg:mt-10">
+          <a target="_blank" href="https://youtube.com/@rabintimsina?si=RgNvEPK1vdaYbQo2"
+            class="flex items-center justify-center w-12 h-12 rounded-full border bg-white text-red-600 shadow-md transition-all duration-300 hover:bg-red-600 hover:text-white hover:scale-110">
+            <i class="fa-brands fa-youtube text-2xl sm:text-xl lg:text-2xl"></i>
           </a>
 
-          <a target="_blank"
-            href="https://www.linkedin.com/in/rabin-timsina-111924265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            class="flex items-center justify-center w-12 h-12 rounded-full border bg-white
-           text-blue-600 shadow-md transition-all duration-300
-           hover:bg-blue-600 hover:text-white hover:scale-110">
-            <i class="fa-brands fa-linkedin text-2xl"></i>
+          <a target="_blank" href="#"
+            class="flex items-center justify-center w-12 h-12 rounded-full border bg-white text-blue-600 shadow-md transition-all duration-300 hover:bg-blue-600 hover:text-white hover:scale-110">
+            <i class="fa-brands fa-linkedin text-2xl sm:text-xl lg:text-2xl"></i>
           </a>
 
-          <a target="_blank" href="https://rabintimsinaa.blogspot.com/" class="flex items-center justify-center w-12 h-12 rounded-full border bg-white
-           text-orange-500 shadow-md transition-all duration-300
-           hover:bg-orange-500 hover:text-white hover:scale-110">
-            <i class="fa-brands fa-blogger text-2xl"></i>
+          <a target="_blank" href="https://rabintimsinaa.blogspot.com/"
+            class="flex items-center justify-center w-12 h-12 rounded-full border bg-white text-orange-500 shadow-md transition-all duration-300 hover:bg-orange-500 hover:text-white hover:scale-110">
+            <i class="fa-brands fa-blogger text-2xl sm:text-xl lg:text-2xl"></i>
+          </a>
+
+          <a target="_blank" href="https://www.tiktok.com/@timsinarabin"
+            class="group flex items-center justify-center w-12 h-12 rounded-full border bg-white  shadow-md transition-all duration-300  hover:scale-110">
+
+            <i class="fa-brands fa-tiktok text-2xl text-black group-hover:text-white"></i>
+
           </a>
         </div>
 
+        <!-- Buttons: flex-row keeps both buttons side by side on ALL screen sizes -->
+        <div class="flex flex-row gap-4 mt-6 justify-center md:justify-start">
+          <button id="exploreBtn"
+            class="flex items-center gap-2 px-4 sm:px-4 py-0.75 text-sm sm:text-sm rounded-lg bg-white-800 text-white font-bold shadow-md hover:shadow-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-blue-500 hover:to-cyan-500 hover:text-white transform hover:-translate-y-1">
 
-        <!-- Buttons -->
-        <div class="flex flex-col sm:flex-row gap-3 mt-6 justify-center md:justify-start">
-          <!-- Explore Button -->
-          <button id="exploreBtn" class="flex items-center gap-2 sm:gap-2 px-4 sm:px-6 py-2 sm:py-2 text-sm sm:text-lg rounded-lg bg-slate-50 text-gray-800 font-semibold
-           shadow-md hover:shadow-xl transition-all duration-300
-           hover:bg-gradient-to-r hover:from-indigo-500 hover:via-blue-500 hover:to-cyan-500
-           hover:text-white transform hover:-translate-y-1">
-            <i class="fas fa-globe text-sm sm:text-base" style="color: blue;"></i>
             Explore Me
           </button>
 
-          <!-- Contact Button -->
-          <button id="contactBtn" class="flex items-center gap-2 sm:gap-2 px-4 sm:px-6 py-2 sm:py-2 text-sm sm:text-lg rounded-lg bg-slate-50 text-gray-800 font-semibold
-           shadow-md hover:shadow-xl transition-all duration-300
-           hover:bg-gradient-to-r hover:from-indigo-500 hover:via-blue-500 hover:to-cyan-500
-           hover:text-white transform hover:-translate-y-1">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 sm:w-5 h-4 sm:h-5" fill="currentColor"
-              viewBox="0 0 24 24" style="color: green;">
-              <path
-                d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.21c1.2.48 2.5.74 3.85.74a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.35.26 2.65.74 3.85a1 1 0 0 1-.21 1.11l-2.2 2.2z" />
-            </svg>
+
+          <button id="contactBtn"
+            class="flex items-center gap-2 px-4 sm:px-4 py-2 text-sm sm:text-sm rounded-lg  text-white font-bold shadow-md hover:shadow-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-blue-500 hover:to-cyan-500 hover:text-white transform hover:-translate-y-1">
+
             Contact Me
           </button>
         </div>
 
+
       </div>
 
+      <!-- Contact Model -->
+      <div id="contactModal" class="hidden fixed inset-0 flex items-center justify-center text-white">
+
+        <div class=" rounded-xl shadow-lg w-11/12 p-6 relative">
+
+          <button id="closeModal" class="absolute top-3 right-3 text-gray-600 text-xl">
+            &times;
+          </button>
+
+          <h2 class="text-xl font-bold mb-4 text-white text-center">Send Message</h2>
+
+          <form id="contactFormModal">
+            <div class="flex flex-col gap-4">
+
+              <input type="text" id="modal-name" placeholder="Name" required
+                class="w-full text-white px-4 py-2 border rounded-lg">
+
+              <input type="email" id="modal-email" placeholder="Email" required
+                class="w-full px-4 py-2 border rounded-lg">
+
+              <textarea id="modal-msg" rows="4" placeholder="Message"
+                class="w-full px-4 py-2 border rounded-lg resize-none"></textarea>
+
+              <button type="submit" class="bg-indigo-400 text-white py-2 rounded-lg hover:bg-indigo-700 transition">
+                Send Message
+              </button>
+
+              <p id="modal-status" class="text-center text-sm"></p>
+
+            </div>
+          </form>
+
+        </div>
+      </div>
       <!-- Right Section: Profile Image -->
-      <div class="relative rounded-full p-1 bg-slate-300 shadow-xl mt-8 md:mt-0">
+      <div class="relative rounded-full p-1 bg-slate-300 shadow-xl mt-0 md:mt-0">
         <img src="images/rabin.png"
           class="h-48 w-48 sm:h-72 sm:w-72 md:h-96 md:w-96 rounded-full object-cover ring-4 ring-white/80 transition-transform duration-300 hover:scale-105">
-
       </div>
 
-      <!-- Animated Circles -->
+
       <div class="absolute -z-10 top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+
       <div class="absolute -z-10 bottom-10 right-10 w-72 h-72 bg-white/20 rounded-full blur-2xl animate-pulse"></div>
     </div>
 
   </div>
 
+
+
   <!-- About Section -->
-  <section id="about" class="hidden px-6 md:px-16 py-12 scroll-smooth  from-slate-50 via-white to-indigo-50">
-
-    <h3 class="text-3xl md:text-4xl font-bold mb-12 font-poppins text-gray-800 text-center md:text-left">
-      About Me
-    </h3>
-
+  <!-- <section id="about" class="hidden px-6 md:px-16 py-12 scroll-smooth bg-[#BAC095]"> -->
+  <section id="about" class="hidden px-6 md:px-16 py-12 scroll-smooth" style="background:#e0dddb;">
+    <h3 class="text-3xl md:text-4xl font-bold mb-12 font-poppins text-gray-500 text-center md:text-left">About Me</h3>
     <div class="flex flex-col md:flex-row items-center md:items-start gap-12 md:gap-16">
-
-      <!-- Image Section -->
       <div
         class="flex-1 max-w-xs rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-        <img src="images/pic.png" alt="Me" class="w-full h-96 object-cover" style="background-color: #334155;">
+        <img src="images/pic.png" alt="Me" class="w-full h-96 object-cover">
       </div>
-
-      <!-- Text Section -->
-      <div class="flex-1 font-outfit italic">
-        <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-          I am a passionate physics student. My deep interest in physics goes beyond textbooks and examinations—I
-          genuinely enjoy understanding, solving, and explaining physics at its core.
-        </p>
-
-        <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-          What excites me most about physics is the way simple principles lead to powerful results through logical
-          reasoning and mathematical derivations. I love working through physics problems step by step, uncovering the
-          ideas behind formulas rather than memorizing them. For me, derivations are not just calculations; they are
-          stories that explain how nature works.
-        </p>
-
-        <p class="text-gray-700 text-base md:text-lg leading-relaxed  mb-6">
-          Alongside learning, I am deeply interested in teaching physics concepts in a clear, intuitive, and
-          student-friendly way. I believe that physics becomes truly beautiful when complex ideas are broken down into
-          simple reasoning, visual thinking, and real-world connections. Whether it is classical mechanics,
-          electromagnetism, or mathematical methods in physics, I enjoy guiding others through concepts with clarity and
-          patience.
-        </p>
-        <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-          My long-term goal is to grow as a physicist and an educator, contributing to physics learning by making it
-          accessible, rigorous, and conceptually clear. If you are curious about physics or want to strengthen your
-          understanding, you are in the right place
-        </p>
+      <div class="flex-1 font-outfit italic text-shadow-gray-600">
+        <p class=" text-base md:text-lg leading-relaxed mb-6">I am a passionate physics student. My deep
+          interest in physics goes beyond textbooks and examinations—I genuinely enjoy understanding, solving, and
+          explaining physics at its core.</p>
+        <p class=" text-base md:text-lg leading-relaxed mb-6">What excites me most about physics is the way
+          simple principles lead to powerful results through logical reasoning and mathematical derivations. I love
+          working through physics problems step by step, uncovering the ideas behind formulas rather than memorizing
+          them. For me, derivations are not just calculations; they are stories that explain how nature works.</p>
+        <p class=" text-base md:text-lg leading-relaxed mb-6">Alongside learning, I am deeply interested in
+          teaching physics concepts in a clear, intuitive, and student-friendly way. I believe that physics becomes
+          truly beautiful when complex ideas are broken down into simple reasoning, visual thinking, and real-world
+          connections. Whether it is classical mechanics, electromagnetism, or mathematical methods in physics, I enjoy
+          guiding others through concepts with clarity and patience.</p>
+        <p class=" text-base md:text-lg leading-relaxed">My long-term goal is to grow as a physicist and an
+          educator, contributing to physics learning by making it accessible, rigorous, and conceptually clear. If you
+          are curious about physics or want to strengthen your understanding, you are in the right place</p>
       </div>
-
     </div>
   </section>
 
-
-  <section class="hidden px-2 md:px-16 py-2 bg-slate-50 scroll-smooth" id="experience">
-    <h3 class="text-2xl md:text-3xl font-bold mb-6 font-poppins text-red-700" style="color:#334155;">
-      Experiences
-    </h3>
-
-    <!-- Existing Experience -->
-    <div class="mb-4">
+  <section class="hidden px-2 md:px-16 py-2 scroll-smooth" id="experience" style="background-color: #F5F5DC;">
+    <h3 class="text-2xl md:text-3xl font-bold mb-6 mt-6 font-poppins " style="color:#334155;">Experiences</h3>
+    <div class="mb-2">
       <strong class="text-lg font-poppins font-semibold">Science Teacher -</strong>
       <span>Emerald Academy School</span>
       <i>2022 - 2025</i>
     </div>
-
-    <!-- New Experience -->
-    <div class="mb-4">
+    <div class="mb-6">
       <strong class="text-lg font-poppins font-semibold">Judge -</strong>
       <span>St. Xavier's Science Exhibition</span>
       <i>2025</i>
     </div>
-
-    <!-- You can add more experiences below -->
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="hidden px-6 md:px-16 py-5 bg-slate-50 scroll-smooth">
-    <div class="flex flex-col md:flex-row justify-between gap-10">
+
+  <section id="contact" class="hidden px-6 md:px-16 py-5 scroll-smooth" style="background:#e8e8d7;">
+    <div class=" flex flex-col md:flex-row justify-between gap-10">
       <div class="flex-1">
         <h3 style="color:#334155;" class="font-bold mb-6 font-poppins text-2xl">Contact</h3>
         <div class="flex flex-col gap-3 max-w-md">
-          <div class="flex items-center gap-2">
-            <i class="fa-regular fa-envelope" style="color: blue"></i>
-            <strong class="w-20 font-poppins" style="color: rgb(113, 76, 147);">Email:</strong>
+          <div>
+            <div class="items-center gap-2 flex">
+              <i class="fa-regular fa-envelope" style="color: blue"></i>
+              <strong class="w-20 font-poppins" style="color: rgb(113, 76, 147);">Email</strong>
+            </div>
+
             <span class="font-outfit">rabintimsinaa@gmail.com</span>
           </div>
 
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-phone" style="color: green;"></i>
-            <strong class="w-20 font-poppins" style="color: rgb(113, 76, 147);">Phone:</strong>
+          <div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-phone" style="color: green;"></i>
+              <strong class="w-20 font-poppins" style="color: rgb(113, 76, 147);">Phone</strong>
+
+            </div>
             <span class="font-outfit">9817058859</span>
           </div>
 
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-map-marker-alt"></i>
-            <strong class="w-20 font-poppins" style="color: rgb(113, 76, 147);">Address:</strong>
-            <span class="font-outfit">Bhadrapur, Jhapa</span>
+          <div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-map-marker-alt"></i>
+              <strong class="w-20 font-poppins" style="color: rgb(113, 76, 147);">Address</strong>
 
+            </div>
+            <span class="font-outfit">Bhadrapur, Jhapa</span>
           </div>
         </div>
       </div>
-
       <div class="flex-1">
-
         <h3 style="color:#334155;" class="font-bold mb-6 font-poppins text-2xl">Find Me</h3>
         <div class="flex flex-col gap-2">
           <div class="flex flex-row gap-3 text-center">
@@ -264,7 +262,6 @@
             <a target="_blank" href="https://youtube.com/@rabintimsina?si=RgNvEPK1vdaYbQo2"
               class="font-outfit text-slate-500 font-bold text-xl">Youtube</a>
           </div>
-
           <div class="flex flex-row gap-3 text-center">
             <a target="_blank"
               href="https://www.linkedin.com/in/rabin-timsina-111924265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -272,71 +269,161 @@
                 class="fa-brands fa-linkedin fa-lg" style="color: blue;"></i></a>
             <a target="_blank"
               href="https://www.linkedin.com/in/rabin-timsina-111924265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              class="font-outfit  text-center text-slate-500 font-bold text-xl">LinkedIn</a>
+              class="font-outfit text-center text-slate-500 font-bold text-xl">LinkedIn</a>
           </div>
-
           <div class="flex flex-row gap-3 text-center">
             <a target="_blank" href="https://rabintimsinaa.blogspot.com/"
               class="inline-block transition-transform duration-300 hover:scale-125"><i
                 class="fa-brands fa-blogger fa-lg" style="color: orange;"></i></a>
             <a target="_blank" href="https://rabintimsinaa.blogspot.com/"
-              class="font-outfit  text-center text-slate-500 font-bold text-xl">Blog</a>
+              class="font-outfit text-center text-slate-500 font-bold text-xl">Blog</a>
+          </div>
+          <div class="flex flex-row gap-3 text-center">
+            <a target="_blank" href="https://www.tiktok.com/@timsinarabin"
+              class="inline-block transition-transform duration-300 hover:scale-125"><i
+                class="fa-brands fa-tiktok fa-lg"></i></a>
+            <a target="_blank" href="https://www.tiktok.com/@timsinarabin"
+              class="font-outfit text-center text-slate-500 font-bold text-xl">Tiktok</a>
           </div>
         </div>
       </div>
-
       <div class="flex-1">
-        <form class="bg-slate-100 backdrop-blur-md border border-gray-200 rounded-xl shadow-lg">
+        <!-- <form class=" backdrop-blur-md border border-gray-200 rounded-xl shadow-lg" style="background-color: #ede5e0;">
           <div class="flex flex-col gap-6 p-6">
-
-            <!-- Name -->
             <div>
-              <label for="name" class="block text-sm font-medium text-black mb-1">
-                Name
-              </label>
+              <label for="name" class="block text-sm font-medium text-black mb-1">Name</label>
+              <input type="text" id="name" placeholder="Enter your name" required
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-black mb-1">Email</label>
+              <input type="email" id="email" placeholder="Enter your email" required
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+            </div>
+            <div>
+              <label for="msg" class="block text-sm font-medium text-black mb-1">Message</label>
+              <textarea id="msg" rows="4" placeholder="Write your message..."
+                class="w-full px-4 py-2 border rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+            </div>
+            <button type="submit"
+              class="bg-indigo-400 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 transition-all duration-300">Send
+              Message</button>
+          </div>
+        </form> -->
+        <form id="contactForm" class="backdrop-blur-md border border-gray-200 rounded-xl shadow-lg mx-auto"
+          style="background-color: #ede5e0; max-width: 320px;">
+          <div class="flex flex-col gap-6 p-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-black mb-1">Name</label>
               <input type="text" id="name" placeholder="Enter your name" required
                 class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400" />
             </div>
 
-            <!-- Email -->
             <div>
-              <label for="email" class="block text-sm font-medium text-black mb-1">
-                Email
-              </label>
+              <label for="email" class="block text-sm font-medium text-black mb-1">Email</label>
               <input type="email" id="email" placeholder="Enter your email" required
                 class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400" />
             </div>
 
-            <!-- Message -->
             <div>
-              <label for="msg" class="block text-sm font-medium text-black mb-1">
-                Message
-              </label>
+              <label for="msg" class="block text-sm font-medium text-black mb-1">Message</label>
               <textarea id="msg" rows="4" placeholder="Write your message..."
                 class="w-full px-4 py-2 border rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
             </div>
 
-            <!-- Button -->
-            <button type="submit" class="bg-indigo-400 text-white py-2 rounded-lg font-medium
-               hover:bg-indigo-700 transition-all duration-300">
+            <button type="submit"
+              class="bg-indigo-400 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 transition-all duration-300">
               Send Message
             </button>
 
+            <p id="status" class="text-sm text-center"></p>
           </div>
         </form>
       </div>
-
     </div>
   </section>
 
   <section id="footer" class="hidden bg-black">
-    <p class="text-teal-50 py-2 text-sm font-outfit text-center">rabintimsinaa@gmail.com | Bhadrapur, Jhapa</p>
-
+    <p class="text-teal-50 py-2 text-sm font-outfit text-center">rabintimsinaa@gmail.com <br>Bhadrapur, Jhapa </p>
   </section>
 
 
-  <script src=" script.js"></script>
-</body>
 
+  <script>
+    document.getElementById('exploreBtn').addEventListener('click', function () {
+      document.body.classList.remove('overflow-hidden');
+      document.getElementById('about').classList.remove('hidden');
+      document.getElementById('experience').classList.remove('hidden');
+      document.getElementById('contact').classList.remove('hidden');
+      document.getElementById('footer').classList.remove('hidden');
+      document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    const modal = document.getElementById('contactModal');
+    const openBtn = document.getElementById('contactBtn');
+    const closeBtn = document.getElementById('closeModal');
+
+    openBtn.addEventListener('click', function () {
+      modal.classList.remove('hidden');
+    });
+
+    closeBtn.addEventListener('click', function () {
+      modal.classList.add('hidden');
+    });
+
+    // Close on outside click
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+
+
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    menuBtn.addEventListener('click', function () {
+      mobileMenu.classList.toggle('hidden');
+
+      // Toggle icon (hamburger ↔ close)
+      if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.textContent = '☰';
+      } else {
+        menuIcon.textContent = '✖';
+      }
+    });
+
+    // Close menu when clicking a link (optional)
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.textContent = '☰';
+      });
+    });
+    // document.getElementById("contactForm").addEventListener("submit", function (e) {
+    //   e.preventDefault();
+
+    //   const status = document.getElementById("status");
+    //   status.textContent = "Sending...";
+
+    //   emailjs
+    //     .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+    //       from_name: document.getElementById("name").value,
+    //       from_email: document.getElementById("email").value,
+    //       message: document.getElementById("msg").value,
+    //     }, "YOUR_PUBLIC_KEY")
+    //     .then(() => {
+    //       status.textContent = "Message sent successfully!";
+    //       status.style.color = "green";
+    //       document.getElementById("contactForm").reset();
+    //     })
+    //     .catch(() => {
+    //       status.textContent = "Failed to send message.";
+    //       status.style.color = "red";
+    //     });
+    // });
+  </script>
+</body>
 
 </html>
